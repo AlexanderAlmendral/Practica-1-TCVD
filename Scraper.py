@@ -1,6 +1,9 @@
 import requests
+import random
+import time
 from bs4 import BeautifulSoup
 
+sleep_time = random.randrange(0, 10)
 
 class RecipeScraper():
 
@@ -9,6 +12,7 @@ class RecipeScraper():
         self.data = []
 
     def __download_html(self, url):
+        time.sleep(sleep_time)
         response = requests.get(url)
         html = response.content
         return html
@@ -27,6 +31,7 @@ class RecipeScraper():
 
 
     def __get_next_link(self, url):
+        time.sleep(sleep_time)
         resp = requests.get(url)
         bs_recipes = BeautifulSoup(resp.content, 'html.parser')
         next_page = bs_recipes.find_all('a', attrs={'class': 'next ga', 'data-event': 'Paginador'})
@@ -39,6 +44,7 @@ class RecipeScraper():
 
     def __get_recipe_links(self, url):
         r_links = []
+        time.sleep(sleep_time)
         response = requests.get(url)
         bs_recipes = BeautifulSoup(response.content, 'html.parser')
         anchors = bs_recipes.find_all('a', attrs={'class': 'titulo titulo--resultado'})
