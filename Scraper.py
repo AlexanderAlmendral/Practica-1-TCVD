@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 
 sleep_time = random.randrange(0, 10)
 
+# Create a webscraper class in Python
 class RecipeScraper():
 
     def __init__(self):
