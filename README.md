@@ -8,8 +8,8 @@ In order to run the code, write on to the console the following instructions:
 
 python Scraper.py --category <food category|All> --stopAfter <number of recipes>
   
-  
-You can either choose among the following categories or 'All' for all categoreis:
+**--food category**  
+You can either enter one of the following categories or 'All' for all categoreis:
 
 |                         |                       |                               |
 |-------------------------|-----------------------|-------------------------------|
@@ -38,9 +38,11 @@ You can either choose among the following categories or 'All' for all categoreis
 | Ideas para condimentar  | Pan                   | Otras verduras                |
 | Consejos de compra      | Cupcakes              | Espinacas                     |
 
-As for the --stopAfter argument, you can choose to have no limits to extract just by entering "None". 
 
-An example of use could be like:
+**--stopAfter**  
+The number of queries you want to execute (~1 per recepie) or, alternatively, "None" to set no limits (will continue executing until there're no more elements to extract)
+
+Example of use:
 
 - *python Scraper.py --category Tortillas --stopAfter 10*
 - *python Scraper.py --category All --stopAfter 10*
