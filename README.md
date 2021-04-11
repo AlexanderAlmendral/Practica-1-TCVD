@@ -11,6 +11,7 @@ python Scraper.py --category <food category> --stopAfter <number of recipes>
   
 Where you can choose among the following categories (--category argument):
 
+|-------------------------|-----------------------|-------------------------------|
 | Canapés                 | Ensaladas saludables  | Espaguetis                    |
 | Empanadas               | Ensaladas con frutas  | Pizza                         |
 | Bocadillos y sándwiches | Ensaladas con pescado | Macarrones                    |
