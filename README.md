@@ -9,7 +9,7 @@ In order to run the code, write on to the console the following instructions:
 python Scraper.py --category <food category> --stopAfter <number of recipes>
   
   
-Where you can choose to fetch all recipes just by introducing "All" value to --category argument or also choose among the following categories:
+Where you can choose to fetch all recipes just by entering "All" value to --category argument or also choose among the following categories:
 
 |                         |                       |                               |
 |-------------------------|-----------------------|-------------------------------|
