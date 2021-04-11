@@ -183,7 +183,6 @@ dataBase_out = pd.DataFrame(
     ]
 )
 
-print(dataBase_out)
 # Export dataframe into a csv file (recipes.csv) and save
 # np.savetxt('recipes.txt', dataBase_out)
 
