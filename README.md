@@ -9,7 +9,7 @@ In order to run the code, write on to the console the following instructions:
 python Scraper.py --category <food category> --stopAfter <number of recipes>
   
   
-Where you can choose among the following categories (--category argument):
+Where you can choose to fetch all recipes just by introducing "All" value to --category argument or also choose among the following categories:
 
 |                         |                       |                               |
 |-------------------------|-----------------------|-------------------------------|
@@ -38,3 +38,10 @@ Where you can choose among the following categories (--category argument):
 | Ideas para condimentar  | Pan                   | Otras verduras                |
 | Consejos de compra      | Cupcakes              | Espinacas                     |
 
+As for the --stopAfter argument, you can choose to have no limits to extract just by entering "None". 
+
+An example of use could be like:
+
+python Scraper.py --category Tortillas --stopAfter 10
+python Scraper.py --category All --stopAfter 10
+python Scraper.py --category All --stopAfter None (This configuration is the one that extracts the entire recipes.csv dataset, it will take a long time to execute) 
