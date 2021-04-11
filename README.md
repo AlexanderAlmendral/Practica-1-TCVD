@@ -42,6 +42,6 @@ As for the --stopAfter argument, you can choose to have no limits to extract jus
 
 An example of use could be like:
 
-python Scraper.py --category Tortillas --stopAfter 10
-python Scraper.py --category All --stopAfter 10
-python Scraper.py --category All --stopAfter None (This configuration is the one that extracts the entire recipes.csv dataset, it will take a long time to execute) 
+- *python Scraper.py --category Tortillas --stopAfter 10*
+- *python Scraper.py --category All --stopAfter 10*
+- *python Scraper.py --category All --stopAfter None* (This configuration is the one that extracts the entire recipes.csv dataset, it will take a long time to execute) 
